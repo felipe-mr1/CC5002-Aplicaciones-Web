@@ -94,6 +94,8 @@ let notify = true;
 
 
 let F = 0;
+// Adds an input element of image type
+// at a certain div
 function AddPhoto(){
     let container = document.getElementById("photos");
     if (F<4){
@@ -102,6 +104,7 @@ function AddPhoto(){
     }
 }
 
+// validates the extension of each input of type photo
 function validatePhotos(){
     let e = 0;
     for (let i = 0; i < F; i++){
@@ -112,7 +115,7 @@ function validatePhotos(){
 }
 
 let R = 0;
-
+// Adds an additonal element of social network input
 function socialNetworks(){
     let container = document.getElementById("redesSociales");
     if (R<4){
@@ -128,6 +131,7 @@ function socialNetworks(){
     }
 }
 
+// validates the maximum length (100) of each social network input
 function validateSocialNetworks(){
     let e = 0;
     for (let i = 0; i < R; i++){
@@ -137,6 +141,7 @@ function validateSocialNetworks(){
     return e <= 0;
 }
 
+// Adds the set of 'comunas' to the corresponding selected 'region'
 function getComuna(){
     let region = document.getElementById("region");
     let selector = document.getElementById("comuna");
@@ -147,6 +152,7 @@ function getComuna(){
     }
 }
 
+// Displays the form to notify an event
 function notifyEvent(){
     let c = document.getElementById("sheetEvent");
     let container_data = document.getElementById("dataInfo");
@@ -179,6 +185,7 @@ function notifyEvent(){
     }
 }
 
+// Displays the element thats contains the recent events saved
 function showEvents(){
     let container = document.getElementById("listEvent");
     let container_data = document.getElementById("dataInfo");
@@ -203,6 +210,7 @@ function showEvents(){
     }
 }
 
+// Displays the element where the stadistics are shown
 function showData(){
     let container = document.getElementById("dataInfo");
     let container_listEvent = document.getElementById("listEvent");
@@ -227,6 +235,7 @@ function showData(){
     }
 }
 
+// Validates each input sent by the user
 function validateForm(){
     // Donde
     let region = document.getElementById("region").value;
@@ -273,11 +282,14 @@ function validateForm(){
 
 }
 
+// Hides the information at the confimation div
 function goBack(){
     let container = document.getElementById("confirmation");
     container.innerHTML="";
 }
 
+
+// Refills 'dia hora termino' after the 'dia hora inicio' is filled
 function refillDate(){
     let y = document.getElementById("dia-hora-inicio").value;
     let container = document.getElementById("dia-hora-termino");
@@ -286,6 +298,8 @@ function refillDate(){
     container.value = new_date[0] + " " + ((parseInt(new_hour[0]) + 3)%24).toString() + ":" + new_hour[1];
 }
 
+
+// Adds the confirmation section to the document
 function confirmation(){
     let container = document.getElementById("confirmation");
     container.innerHTML += "<p>¿Está seguro que quiere agregar este evento?</p>"
@@ -294,6 +308,8 @@ function confirmation(){
         "al formulario</button>";
 }
 
+
+// Shows the image shown with a bigger width and height
 function showPic(x){
     let container = document.getElementById("zoomedPhoto");
     container.style.display = "block";
@@ -301,11 +317,14 @@ function showPic(x){
     "<button class='button clickable' onclick='hidePhoto()' >Volver</button>";
 }
 
+
+// Hides the photo by changing the display of an element
 function hidePhoto(){
     let container = document.getElementById("zoomedPhoto");
     container.style.display = "none";
 }
 
+// Set of different descrptions of events to show
 let descPeru = "<p>Este día 9 de Septiembre se invita a nuestros vecinos a probar nuestra" +
     " cocina peruana desde las 18:00 hasta las 21:00. Estamos ubicados en la Florida, sector Vicuña Mackena. Para más informacion contactarse con Wendy al +569 5555 5555</p>"
 
@@ -320,6 +339,7 @@ let descChile1 = "<p>Fiesta Patrias! variadas preparaciones clasicas! y más! es
 let descChile2 = "<p>La Reina! Padre Hurtado! Fiestas Patrias! Este 18 de Septiembre 12:00 hasta las 18:00. Variadas comidas chilenas para celebrar esta fecha!<br>" +
     "Contacto: +569 1111 1111</p>"
 
+// Shows the description of the clicked event
 function eventInfo(x){
     let url = "";
     let description = "";
@@ -337,6 +357,7 @@ function eventInfo(x){
         "<a href='Tichen.html'>Volver a la portada</a>";
 }
 
+// Hides the info of an event by changing the display of the element
 function hideInfo(){
     let container = document.getElementById("eventInfo");
     container.style.display = "none";
