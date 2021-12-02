@@ -29,10 +29,6 @@ for d in data:
     a = list(d)
     var = time(a[0])
     a[0] = int(var[0])*10000 + int(var[1])*100 + int(var[2])
-    #a[0] = time(a[0])
     l.append(a)
-
-
-#data = dict(data)
 
 print(l)

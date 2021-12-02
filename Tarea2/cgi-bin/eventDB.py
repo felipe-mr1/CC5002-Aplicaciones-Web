@@ -166,6 +166,7 @@ class Event:
         self.cursor.execute(f'SELECT identificador from red_social where evento_id = {id}')
         return self.cursor.fetchall()
 
+    # RETORNA EL NUMERO DE FOTOS ASOCIADO A UN EVENTO
     def getNumberPhotos(self, id):
         self.cursor.execute(f'SELECT COUNT(evento_id) from foto where evento_id = {id}')
         return self.cursor.fetchall()

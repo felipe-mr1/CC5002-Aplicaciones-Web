@@ -400,7 +400,7 @@ function EventoInfo(info){
     "<a href='home.py'>Volver a la portada</a>";
 }
 
-
+// displays the details of an events in a determined div
 function details(data){
     infoEvent = data.split(",");
     let container = document.getElementById("details");
@@ -411,6 +411,7 @@ function details(data){
     "<button type='button' onclick='hideDetails()'>Esconder detalles</button>";
 }
 
+// hides the details of an event
 function hideDetails(){
     let container = document.getElementById("details");
     container.innerHTML = "";
