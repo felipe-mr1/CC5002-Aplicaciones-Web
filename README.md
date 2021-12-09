@@ -16,6 +16,14 @@ Simular y desarrollar pagina que permite a los empresarios informar un nuevo eve
 
 Desarrollar la pagina de eventos para que pueda guardar y consultar eventos guardados recientemente con una base de datos.
 
+A continuación una imagen del formulario para inscribir un evento:
+
+<img src="images/t2Event.png">
+
+En la siguiente imagen se puede ver un listado de los últimos 5 eventos inscritos:
+
+<img src="images/t2List.png">
+
 # Tarea 3
 
 Desarrollar la pagina de eventos para que pueda recolectar los datos del servidor para luego graficarlos usando AJAX. Adicionalmente se implementa el uso de un mapa que permite visualizar los eventos inscritos a traves de la libreria [Leaflet](https://leafletjs.com/).
