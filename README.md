@@ -27,3 +27,11 @@ En la siguiente imagen se puede ver un listado de los últimos 5 eventos inscrit
 # Tarea 3
 
 Desarrollar la pagina de eventos para que pueda recolectar los datos del servidor para luego graficarlos usando AJAX. Adicionalmente se implementa el uso de un mapa que permite visualizar los eventos inscritos a traves de la libreria [Leaflet](https://leafletjs.com/).
+
+La siguiente imagen permite ver el mapa con la ubicación de un evento inscrito en la página:
+
+<img src="images/t3Map.png">
+
+En esta imagen se puede ver la cantidad de eventos por tipos obtenido a partir de la base de datos:
+
+<img src="images/t3Stats.png">
