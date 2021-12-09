@@ -35,3 +35,13 @@ La siguiente imagen permite ver el mapa con la ubicación de un evento inscrito 
 En esta imagen se puede ver la cantidad de eventos por tipos obtenido a partir de la base de datos:
 
 <img src="images/t3Stats.png">
+
+# Local
+
+Para correr el servidor de forma local no olvidar lanzar apache y usar el comando (si es que el puerto 10000 esta libre):
+
+```python
+
+python -m http.server --bind localhost  --cgi 10000
+
+```
